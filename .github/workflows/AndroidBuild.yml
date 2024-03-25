@@ -6,7 +6,7 @@
       branches: [ main ]
   jobs:
     build:
-      runs-on: macos-latest
+      runs-on: Macos-latest
       steps:
         - name: Checkouts
           uses: actions/checkout@v4.1.2
@@ -17,7 +17,7 @@
             java version: '17'
             distribution: 'adopt'
 
-        - name: Build with gradle
+        - name: Build with Gradle
           run: ./gradlew build
 
         - name: Upload a Build Artifact
